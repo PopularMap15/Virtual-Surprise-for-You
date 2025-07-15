@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>For my Dandan</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(251, 240, 255);
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      font-size: 60px;
+      color: rgb(99, 61, 139);
+    }
+
+    button {
+      padding: 12px 24px;
+      font-size: 35px;
+      background-color: rgb(210, 172, 227);
+      color: white;
+      border: none;
+      border-radius: 10px;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: rgb(226, 218, 255);
+    }
+  </style>
+</head>
+<body>
+
+  <h1 id="greeting">To my Dandan!</h1>
+  <button onclick="changeText()">Proceed</button>
+
+  <script>
+    function changeText() {
+      // Change greeting
+      document.getElementById("greeting").innerText = "This is for you, my love 🫶";
+      
+      // Proceed to page1.html after 1.5 seconds
+      setTimeout(function () {
+        window.location.href = "page1.html"; // only this
+      }, 1500);
+    }
+  </script>
+
+</body>
+</html>
